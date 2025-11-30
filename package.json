@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "dev:client": "cd app && npm run dev",
+    "build": "cd app && npm install && npm run build:client",
+    "build:client": "vite build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "react-toastify": "^11.0.5",
+    "socket.io": "^4.8.1"
+  }
+}
